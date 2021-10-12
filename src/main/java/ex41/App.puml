@@ -1,7 +1,14 @@
 @startuml
-Object <|-- ArrayList
 
-Object : equals()
-ArrayList : Object[] elementData
-ArrayList : size()
+class App
+{
+    +ArrayList<String> name
+
+    +void writeToFile(ArrayList<String> name)
+    +void sortArray(ArrayList<String> name)
+    +ArrayList<String> parseName()
+    +void main()
+
+}
+
 @enduml

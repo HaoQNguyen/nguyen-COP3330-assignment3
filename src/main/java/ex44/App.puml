@@ -1,0 +1,24 @@
+@startuml
+
+class App
+{
+    +Product[] products
+
+    +Product[] parseJsonFile()
+    +void productRetriever(Product[] products)
+    +main( String[] args )
+}
+
+class Product
+{
+    -String name
+    -double price
+    -int quantity
+
+    +Product(String name, double price, int quantity)
+    +String getName()
+    +double getPrice()
+    +int getQuantity()
+}
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+
+class App
+{
+    +ArrayList<String> name
+    +String[] last
+    +String[] first
+    +String[] salary
+
+    +void printTable(String[] last, String[] first, String[] salary)
+    +void parseInput(ArrayList<String> name, String[] last, String[] first, String[] salary)
+    +ArrayList<String> fillArray()
+    +main( String[] args )
+
+}
+
+@enduml

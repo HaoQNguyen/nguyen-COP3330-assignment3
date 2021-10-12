@@ -1,0 +1,29 @@
+@startuml
+
+class App
+{
+
+    +WebsiteGenerator newWebsite
+    +Scanner input
+
+    +void main( String[] args )
+
+}
+
+class WebsiteGenerator
+{
+
+    -String name
+    -String author
+
+    +void setName(String name)
+    +void setAuthor(String author)
+    +void mainFolder()
+    +void htmlFile()
+    +void jsFolder()
+    +void cssFolder()
+    +void report()
+
+}
+
+@enduml

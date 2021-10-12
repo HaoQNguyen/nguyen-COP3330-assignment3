@@ -1,0 +1,16 @@
+@startuml
+
+class App
+{
+    +String s
+    +String r
+    +String outputName
+
+    +void writeFile(String outputName, String r)
+    +String getName()
+    +String replaceString(String s, String original, String replacement)
+    +String readFile()
+    +void main( String[] args )
+}
+
+@enduml

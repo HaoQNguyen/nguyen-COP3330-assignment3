@@ -1,0 +1,27 @@
+@startuml
+
+class App
+{
+    +String input
+    +WordCounter counter
+
+    +String readFile ()
+    +void main( String[] args )
+}
+
+class WordCounter
+{
+    -String input;
+    -ArrayList<String> word;
+    -ArrayList<Integer> frequency;
+
+    +WordCounter (String input)
+    +ArrayList<String> getWord()
+    +ArrayList<Integer> getFrequency()
+    -int compare (String newWord)
+    +void counter ()
+    +void sortLists ()
+    +void histogram ()
+}
+
+@enduml
